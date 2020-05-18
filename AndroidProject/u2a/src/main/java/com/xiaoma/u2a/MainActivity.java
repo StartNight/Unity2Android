@@ -3,6 +3,9 @@ package com.xiaoma.u2a;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Toast;
+
+import com.unity3d.player.UnityPlayer;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
-     //unity调用Android
+    //unity调用Android
     public void UnityCallAndroid () {
 
         Toast.makeText(this,"unity调用android成功", Toast.LENGTH_LONG).show();
@@ -27,3 +30,4 @@ public class MainActivity extends AppCompatActivity {
         UnityPlayer.UnitySendMessage("receiveObj", "UnityMethod", "This is args.");
     }
 }
+
